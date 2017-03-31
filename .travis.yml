@@ -29,8 +29,8 @@ before_install:
   - luaenv install $LUA
   - luaenv global $LUA
   - luaenv luarocks $LUAROCKS
-  - luarocks install luafilesystem
-  - luarocks install busted
+  - luarocks install luafilesystem # Install your depended luarocks modules here (one line for each module)
+  - luarocks install busted # Install your unit test modules here, busted is recommended
   - luaenv rehash
 
 install:

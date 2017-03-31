@@ -17,13 +17,13 @@ install:
 
 before_build:
   - luavm use %LUA_VER%
-  - luarocks install luafilesystem
+  - luarocks install luafilesystem # Install your depended luarocks modules here (one line for each module)
 
 build_script:
   - luarocks make
 
 before_test:
-  - luarocks install busted
+  - luarocks install busted # Install your unit test modules here, busted is recommended
 
 test_script:
   - busted
