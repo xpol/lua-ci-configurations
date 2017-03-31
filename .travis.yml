@@ -4,6 +4,7 @@ sudo: false
 
 os:
   - osx
+  - linux
 
 env:
   global:
